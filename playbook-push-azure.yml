@@ -11,7 +11,7 @@
       ssh_password_enabled: false
       ssh_public_keys: 
         - path: /home/azureuser/.ssh/authorized_keys
-          key_data: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCqWtx12cGNaBT0YmEO99vTRW7TvdwyGpvEzjaNXRxnwWrc6xLNgElypOPeyvcAMXQ0T3vgFXFpHuMc+T+dDj0XavSzqDfoJ0GtHbRRO6GdEih0P8e9pLlhOZNgGgPk7arFI9n6rQgcLPrA5vZevKUY+Nr5dvf5PyckloKCWPfITWo55Y64xXIQ+gAx84B/Js7zlVF3sWld5ImPXoQ8lAcWyBlpzY710DJcBcWj2Uqw0DaPftZtLWyvRJNLLCoE7fwzYW3q6dPbr7NeP9r1xkji38QaOw89fV8zOQsxzT2W3aqLmLUQ0cIiZH80xTxofrb3dTtm5dYbc8GM4hnEHeH3 "
+          key_data: "key"
       image:
         offer: CentOS
         publisher: OpenLogic
