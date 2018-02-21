@@ -4,7 +4,7 @@
   tasks:
   - name: Install postgres packages
     sudo: yes
-    yum: name={{ item }} state=present
+    yum: name={{ item }} state=latest
     with_items:
       - postgresql-server
       - python-psycopg2
