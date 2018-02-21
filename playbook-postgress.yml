@@ -2,9 +2,6 @@
   hosts: localhost
   connection: local
   tasks:
-  - name: upgrade all packages
-    yum: name='*' state=latest
-
   - name: Install postgres packages
     sudo: yes
     yum: name={{ item }} state=installed
