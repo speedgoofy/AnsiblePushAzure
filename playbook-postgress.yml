@@ -1,5 +1,5 @@
 - name: Install Postgress
-  hosts: all
+  hosts: test[all]
   tasks:
   - name: Install postgres packages
     sudo: yes
