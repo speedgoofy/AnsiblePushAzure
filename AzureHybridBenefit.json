@@ -12,10 +12,15 @@
                 "name": "[concat(parameters('vmName'),'/ConfigureRemotingForAnsible')]",
                 "apiVersion": "2015-06-15",
                 "location": "[resourceGroup().location]",
+                "properties": {
+                    "copy": [
+                        {
+                            "licenseType": "Windows_Server"
+                        }
+                    ]
+
+                }
         }
-    ],
-    "properties": {
-        "licenseType": "Windows_Server"
-    }
+    ]
 }
 
