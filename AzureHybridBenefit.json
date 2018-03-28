@@ -11,13 +11,14 @@
           "type": "Microsoft.Compute/virtualMachines/extensions",
           "name": "[concat(parameters('vmName'),'/ConfigureRemotingForAnsible')]",
           "apiVersion": "2015-06-15",
-          "location": "[resourceGroup().location]",
+          "location": "South Central US",
           "properties": {
             "licenseType": "Windows_Server",
             "hardwareProfile": {
                 "vmSize": "[variables('vmSize')]"
            }
           }
+
       }
   ]
 }
