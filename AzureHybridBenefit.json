@@ -8,19 +8,12 @@
     },
     "resources": [
         {
-                "type": "Microsoft.Compute/virtualMachines/extensions",
+                "type": "Microsoft.Compute/virtualMachines",
                 "name": "[concat(parameters('vmName'),'/ConfigureRemotingForAnsible')]",
-                "apiVersion": "2015-06-15",
                 "location": "[resourceGroup().location]",
                 "properties": {
-                    "copy": [
-                        {
-                            "licenseType": "Windows_Server"
-                        }
-                    ]
-
+                    "licenseType": "Windows_Server"
                 }
         }
     ]
 }
-
