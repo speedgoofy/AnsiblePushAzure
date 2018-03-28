@@ -13,10 +13,6 @@
                 "apiVersion": "2015-06-15",
                 "location": "[resourceGroup().location]",
                 "properties": {
-                    "publisher": "Microsoft.Compute",
-                    "type": "CustomScriptExtension",
-                    "typeHandlerVersion": "1.8",
-                    "autoUpgradeMinorVersion": true,
                     "licenseType": "Windows_Server"
                 }
         }
