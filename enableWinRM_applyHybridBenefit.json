@@ -6,7 +6,7 @@
             "type": "string"
         }
     },
-     "resources": [
+    "resources": [
         {
             "type": "Microsoft.Compute/virtualMachines",
             "name": "[parameters('vmName')]",
@@ -15,9 +15,7 @@
             "properties": {
                 "licenseType": "Windows_Server"
             }
-        }
-    ],
-    "resources": [
+        },
         {
             "type": "Microsoft.Compute/virtualMachines/extensions",
             "name": "[concat(parameters('vmName'),'/ConfigureRemotingForAnsible')]",
@@ -38,3 +36,4 @@
         }
     ]
 }
+
